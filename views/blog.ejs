@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("header.ejs") %>
+<form action="/submit" method="get">
+    <input type="text" name="name" placeholder="Enter your name" required><br>
+    <input type="text" name="email" placeholder="Enter your E-mail" required><br>
+    <textarea name="text"></textarea> <br>
+    <button type="submit">send</button>
+</form>
+
+<%- include("footer.ejs") %>
+</body>
+</html>
